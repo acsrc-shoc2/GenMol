@@ -1,0 +1,2 @@
+Bootstrap: docker
+From: nvcr.io/nim/nvidia/genmol:1.0.0
