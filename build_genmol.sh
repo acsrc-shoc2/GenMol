@@ -2,8 +2,8 @@
 
 #Set up cache folders
 unset APPTAINER_BIND
-APPTAINER_CACHEDIR=$(mktemp -d)
-APPTAINER_TMPDIR=${APPTAINER_CACHEDIR}
+export APPTAINER_CACHEDIR=$(mktemp -d)
+export APPTAINER_TMPDIR=${APPTAINER_CACHEDIR}
 
 #Confirm a valid NGC API key is available before attempting to log in / build
 if ! "$(dirname "$0")/check_genmol_api_key.sh"; then
