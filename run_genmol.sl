@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-#SBATCH --time          00:30:00
+#SBATCH --time          00:10:00
 #SBATCH --mem           20GB
 #SBATCH --cpus-per-task 8
 #SBATCH --account       uoa04517
